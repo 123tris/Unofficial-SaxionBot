@@ -28,7 +28,7 @@ class Program
 
         //Setup command handler
         commandHandler = new CommandHandler(client);
-        await commandHandler.Init();
+        await commandHandler.InitAsync();
 
         //Connect to server
         Console.WriteLine("Inser your token here:\n");

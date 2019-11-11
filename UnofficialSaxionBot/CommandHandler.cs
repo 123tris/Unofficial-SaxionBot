@@ -14,7 +14,7 @@ public class CommandHandler
         service = new CommandService();
     }
 
-    public async Task Init()
+    public async Task InitAsync()
     {
         client.MessageReceived += HandleCommandAsync;
         await service.AddModulesAsync(Assembly.GetEntryAssembly(), null);
